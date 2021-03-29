@@ -68,6 +68,7 @@ export default {
     return {
       // for new tasks
       newTask: "",
+
       // 4 arrays to keep track of our 4 statuses
       arrTodo: [
         { name: "Gör dina saker!" },
@@ -84,7 +85,7 @@ export default {
     //add new tasks method
     add: () => {
       if (this.newTask) {
-        this.arrBackLog.push({ name: this.newTask });
+        this.arrTodo.push({ name: this.newTask });
         this.newTask = "";
       }
     }
