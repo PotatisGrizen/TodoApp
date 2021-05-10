@@ -3,7 +3,7 @@
     <header>
       <h1>Todo-app</h1>
     </header>
-    <label class="newTodoWrapper">
+    <div class="newTodoWrapper">
       <input
         class="newTodo"
         v-model="newTask"
@@ -11,9 +11,9 @@
         @keyup.enter="add(newTask, arrTodo)"
       />
       <button class="submit" variant="primary" @click="add(newTask, arrTodo)">
-        Add
+        <p>Add</p>
       </button>
-    </label>
+    </div>
     <div class="Columns">
       <section class="Column" id="todo">
         <div class="head"></div>
